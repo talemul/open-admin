@@ -1,8 +1,11 @@
 <?php
 
-uses(\TestCase::class);
-test('laravel', function () {
-    $this->visit('/')
-        ->assertResponseStatus(200)
-        ->see('Laravel');
-});
+class LaravelTest extends TestCase
+{
+    public function testLaravel()
+    {
+        $this->visit('/')
+            ->assertResponseStatus(200)
+            ->see('Laravel');
+    }
+}

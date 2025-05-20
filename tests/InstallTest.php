@@ -1,22 +1,25 @@
 <?php
 
-uses(\TestCase::class);
-test('installed directories', function () {
-    expect(admin_path())->toBeFile();
+class InstallTest extends TestCase
+{
+    public function testInstalledDirectories()
+    {
+        $this->assertFileExists(admin_path());
 
-    expect(admin_path('Controllers'))->toBeFile();
+        $this->assertFileExists(admin_path('Controllers'));
 
-    expect(admin_path('routes.php'))->toBeFile();
+        $this->assertFileExists(admin_path('routes.php'));
 
-    expect(admin_path('bootstrap.php'))->toBeFile();
+        $this->assertFileExists(admin_path('bootstrap.php'));
 
-    expect(admin_path('Controllers/HomeController.php'))->toBeFile();
+        $this->assertFileExists(admin_path('Controllers/HomeController.php'));
 
-    expect(admin_path('Controllers/AuthController.php'))->toBeFile();
+        $this->assertFileExists(admin_path('Controllers/AuthController.php'));
 
-    expect(admin_path('Controllers/ExampleController.php'))->toBeFile();
+        $this->assertFileExists(admin_path('Controllers/ExampleController.php'));
 
-    expect(config_path('admin.php'))->toBeFile();
+        $this->assertFileExists(config_path('admin.php'));
 
-    expect(public_path('vendor/laravel-admin'))->toBeFile();
-});
+        $this->assertFileExists(public_path('vendor/open-admin'));
+    }
+}
