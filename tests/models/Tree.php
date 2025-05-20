@@ -2,8 +2,8 @@
 
 namespace Tests\Models;
 
+use Encore\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
-use OpenAdmin\Admin\Traits\ModelTree;
 
 class Tree extends Model
 {

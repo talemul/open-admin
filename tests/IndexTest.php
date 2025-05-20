@@ -1,49 +1,39 @@
 <?php
 
-use OpenAdmin\Admin\Auth\Database\Administrator;
+uses(\TestCase::class);
+use Encore\Admin\Auth\Database\Administrator;
+beforeEach(function () {
+    $this->be(Administrator::first(), 'admin');
+});
+test('index', function () {
+    $this->visit('admin/')
+        ->see('Dashboard')
+        ->see('Description...')
 
-class IndexTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
+        ->see('Environment')
+        ->see('PHP version')
+        ->see('Laravel version')
 
-        $this->be(Administrator::first(), 'admin');
-    }
+        ->see('Available extensions')
+        ->seeLink('laravel-admin-ext/helpers', 'https://github.com/laravel-admin-extensions/helpers')
+        ->seeLink('laravel-admin-ext/backup', 'https://github.com/laravel-admin-extensions/backup')
+        ->seeLink('laravel-admin-ext/media-manager', 'https://github.com/laravel-admin-extensions/media-manager')
 
-    public function testIndex()
-    {
-        $this->visit('admin/')
-            ->see('Dashboard')
-            ->see('Description...')
-
-            ->see('Environment')
-            ->see('PHP version')
-            ->see('Laravel version')
-
-            ->see('Available extensions')
-            ->seeLink('open-admin-ext/helpers', 'https://github.com/open-admin-extensions/helpers')
-            ->seeLink('open-admin-ext/backup', 'https://github.com/open-admin-extensions/backup')
-            ->seeLink('open-admin-ext/media-manager', 'https://github.com/open-admin-extensions/media-manager')
-
-            ->see('Dependencies')
-            ->see('php')
+        ->see('Dependencies')
+        ->see('php')
 //            ->see('>=7.0.0')
-            ->see('laravel/framework');
-    }
-
-    public function testClickMenu()
-    {
-        $this->visit('admin/')
-            ->click('Users')
-            ->seePageis('admin/auth/users')
-            ->click('Roles')
-            ->seePageis('admin/auth/roles')
-            ->click('Permission')
-            ->seePageis('admin/auth/permissions')
-            ->click('Menu')
-            ->seePageis('admin/auth/menu')
-            ->click('Operation log')
-            ->seePageis('admin/auth/logs');
-    }
-}
+        ->see('laravel/framework');
+});
+test('click menu', function () {
+    $this->visit('admin/')
+        ->click('Users')
+        ->seePageis('admin/auth/users')
+        ->click('Roles')
+        ->seePageis('admin/auth/roles')
+        ->click('Permission')
+        ->seePageis('admin/auth/permissions')
+        ->click('Menu')
+        ->seePageis('admin/auth/menu')
+        ->click('Operation log')
+        ->seePageis('admin/auth/logs');
+});
