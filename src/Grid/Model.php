@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid;
+namespace SuperAdmin\Admin\Grid;
 
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -12,8 +12,8 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Str;
-use OpenAdmin\Admin\Grid;
-use OpenAdmin\Admin\Middleware\Pjax;
+use SuperAdmin\Admin\Grid;
+use SuperAdmin\Admin\Middleware\Pjax;
 
 class Model
 {

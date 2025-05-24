@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Tools;
+namespace SuperAdmin\Admin\Grid\Tools;
 
 use Illuminate\Pagination\LengthAwarePaginator;
-use OpenAdmin\Admin\Grid;
+use SuperAdmin\Admin\Grid;
 
 class Paginator extends AbstractTool
 {

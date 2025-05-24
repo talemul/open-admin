@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\Form\Concerns;
+namespace SuperAdmin\Admin\Form\Concerns;
 
 use Closure;
 use Illuminate\Support\Arr;

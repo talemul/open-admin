@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\Widgets;
+namespace SuperAdmin\Admin\Widgets;
 
 use Illuminate\Contracts\Support\Renderable;
 
@@ -70,7 +70,7 @@ class MultipleSteps implements Renderable
         $class = $this->steps[$this->current];
 
         if (!is_subclass_of($class, StepForm::class)) {
-            admin_error("Class [{$class}] must be a sub-class of [OpenAdmin\Admin\Widgets\StepForm].");
+            admin_error("Class [{$class}] must be a sub-class of [SuperAdmin\Admin\Widgets\StepForm].");
 
             return;
         }

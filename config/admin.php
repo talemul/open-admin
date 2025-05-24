@@ -4,18 +4,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin name
+    | super-admin name
     |--------------------------------------------------------------------------
     |
-    | This value is the name of Open-admin, This setting is displayed on the
+    | This value is the name of super-admin, This setting is displayed on the
     | login page.
     |
     */
-    'name' => 'Open Admin',
+    'name' => 'Super Admin',
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin logo
+    | super-admin logo
     |--------------------------------------------------------------------------
     |
     | The logo of all admin pages. You can also set it as an image by using a
@@ -26,7 +26,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin mini logo
+    | super-admin mini logo
     |--------------------------------------------------------------------------
     |
     | The logo of all admin pages when the sidebar menu is collapsed. You can
@@ -38,17 +38,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin bootstrap setting
+    | super-admin bootstrap setting
     |--------------------------------------------------------------------------
     |
-    | This value is the path of open-admin bootstrap file.
+    | This value is the path of super-admin bootstrap file.
     |
     */
     'bootstrap' => app_path('Admin/bootstrap.php'),
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin route settings
+    | super-admin route settings
     |--------------------------------------------------------------------------
     |
     | The routing configuration of the admin page, including the path prefix,
@@ -67,7 +67,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin install directory
+    | super-admin install directory
     |--------------------------------------------------------------------------
     |
     | The installation directory of the controller and routing configuration
@@ -79,7 +79,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin html title
+    | super-admin html title
     |--------------------------------------------------------------------------
     |
     | Html title for all pages.
@@ -99,7 +99,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin auth setting
+    | super-admin auth setting
     |--------------------------------------------------------------------------
     |
     | Authentication settings for all admin pages. Include an authentication
@@ -124,7 +124,7 @@ return [
         'providers' => [
             'admin' => [
                 'driver' => 'eloquent',
-                'model'  => OpenAdmin\Admin\Auth\Database\Administrator::class,
+                'model'  => SuperAdmin\Admin\Auth\Database\Administrator::class,
             ],
         ],
 
@@ -148,7 +148,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin upload setting
+    | super-admin upload setting
     |--------------------------------------------------------------------------
     |
     | File system configuration for form upload files and images, including
@@ -169,10 +169,10 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Open-admin database settings
+    | super-admin database settings
     |--------------------------------------------------------------------------
     |
-    | Here are database settings for open-admin builtin model & tables.
+    | Here are database settings for super-admin builtin model & tables.
     |
     */
     'database' => [
@@ -182,19 +182,19 @@ return [
 
         // User tables and model.
         'users_table' => 'admin_users',
-        'users_model' => OpenAdmin\Admin\Auth\Database\Administrator::class,
+        'users_model' => SuperAdmin\Admin\Auth\Database\Administrator::class,
 
         // Role table and model.
         'roles_table' => 'admin_roles',
-        'roles_model' => OpenAdmin\Admin\Auth\Database\Role::class,
+        'roles_model' => SuperAdmin\Admin\Auth\Database\Role::class,
 
         // Permission table and model.
         'permissions_table' => 'admin_permissions',
-        'permissions_model' => OpenAdmin\Admin\Auth\Database\Permission::class,
+        'permissions_model' => SuperAdmin\Admin\Auth\Database\Permission::class,
 
         // Menu table and model.
         'menu_table' => 'admin_menu',
-        'menu_model' => OpenAdmin\Admin\Auth\Database\Menu::class,
+        'menu_model' => SuperAdmin\Admin\Auth\Database\Menu::class,
 
         // Pivot table for table above.
         'operation_log_table'    => 'admin_operation_log',
@@ -209,7 +209,7 @@ return [
     | User operation log setting
     |--------------------------------------------------------------------------
     |
-    | By setting this option to open or close operation log in open-admin.
+    | By setting this option to open or close operation log in super-admin.
     |
     */
     'operation_log' => [
@@ -263,7 +263,7 @@ return [
     | Set a default avatar for newly created users.
     |
     */
-    'default_avatar' => '/vendor/open-admin/open-admin/gfx/user.svg',
+    'default_avatar' => '/vendor/super-admin/super-admin/gfx/user.svg',
 
     /*
     |--------------------------------------------------------------------------
@@ -314,7 +314,7 @@ return [
     | Show version at footer
     |--------------------------------------------------------------------------
     |
-    | Whether to display the version number of open-admin at the footer of
+    | Whether to display the version number of super-admin at the footer of
     | each page
     |
     */
@@ -388,7 +388,7 @@ return [
     | The global Grid action display class. (Actions::class, DropdownActions:class or ContextMenuActions::class)
     |--------------------------------------------------------------------------
     */
-    'grid_action_class' => \OpenAdmin\Admin\Grid\Displayers\Actions\Actions::class,
+    'grid_action_class' => \SuperAdmin\Admin\Grid\Displayers\Actions\Actions::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -406,7 +406,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | You can find all available extensions here
-    | https://github.com/open-admin-extensions.
+    | https://github.com/super-admin-extensions.
     |
     */
     'extensions' => [

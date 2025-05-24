@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Filter\Layout;
+namespace SuperAdmin\Admin\Grid\Filter\Layout;
 
 use Illuminate\Support\Collection;
-use OpenAdmin\Admin\Grid\Filter\AbstractFilter;
+use SuperAdmin\Admin\Grid\Filter\AbstractFilter;
 
 class Column
 {

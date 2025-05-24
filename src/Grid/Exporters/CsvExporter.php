@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Exporters;
+namespace SuperAdmin\Admin\Grid\Exporters;
 
-use OpenAdmin\Admin\Grid\Column;
+use SuperAdmin\Admin\Grid\Column;
 
 class CsvExporter extends AbstractExporter
 {

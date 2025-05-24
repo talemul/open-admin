@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\Console;
+namespace SuperAdmin\Admin\Console;
 
 use Illuminate\Console\Command;
 use ReflectionClass;
@@ -20,7 +20,7 @@ class DevLinksCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Creates a symbolic link from the open-admin/resources/assets dir to public/vendor/open-admin for ease of development';
+    protected $description = 'Creates a symbolic link from the super-admin/resources/assets dir to public/vendor/super-admin for ease of development';
 
     /**
      * Execute the console command.
@@ -60,10 +60,10 @@ class DevLinksCommand extends Command
      */
     protected function links()
     {
-        $reflector = new ReflectionClass("\OpenAdmin\Admin\Admin");
+        $reflector = new ReflectionClass("\SuperAdmin\Admin\Admin");
         $dir = str_replace('src/Admin.php', '', $reflector->getFileName()).'resources/assets/';
 
-        return [public_path('vendor/open-admin') => $dir];
+        return [public_path('vendor/super-admin') => $dir];
     }
 
     /**

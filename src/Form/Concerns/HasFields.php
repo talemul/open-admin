@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenAdmin\Admin\Form\Concerns;
+namespace SuperAdmin\Admin\Form\Concerns;
 
 use Illuminate\Support\Arr;
-use OpenAdmin\Admin\Form\Field;
+use SuperAdmin\Admin\Form\Field;
 
 /**
  * @method Field\Text           text($column, $label = '')

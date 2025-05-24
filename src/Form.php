@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin;
+namespace SuperAdmin\Admin;
 
 use Closure;
 use Illuminate\Contracts\Support\Arrayable;
@@ -14,18 +14,18 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Validator;
-use OpenAdmin\Admin\Exception\Handler;
-use OpenAdmin\Admin\Form\Builder;
-use OpenAdmin\Admin\Form\Concerns\HandleCascadeFields;
-use OpenAdmin\Admin\Form\Concerns\HasFields;
-use OpenAdmin\Admin\Form\Concerns\HasFormAttributes;
-use OpenAdmin\Admin\Form\Concerns\HasHooks;
-use OpenAdmin\Admin\Form\Field;
-use OpenAdmin\Admin\Form\Layout\Layout;
-use OpenAdmin\Admin\Form\Row;
-use OpenAdmin\Admin\Form\Tab;
-use OpenAdmin\Admin\Grid\Tools\BatchEdit;
-use OpenAdmin\Admin\Traits\ShouldSnakeAttributes;
+use SuperAdmin\Admin\Exception\Handler;
+use SuperAdmin\Admin\Form\Builder;
+use SuperAdmin\Admin\Form\Concerns\HandleCascadeFields;
+use SuperAdmin\Admin\Form\Concerns\HasFields;
+use SuperAdmin\Admin\Form\Concerns\HasFormAttributes;
+use SuperAdmin\Admin\Form\Concerns\HasHooks;
+use SuperAdmin\Admin\Form\Field;
+use SuperAdmin\Admin\Form\Layout\Layout;
+use SuperAdmin\Admin\Form\Row;
+use SuperAdmin\Admin\Form\Tab;
+use SuperAdmin\Admin\Grid\Tools\BatchEdit;
+use SuperAdmin\Admin\Traits\ShouldSnakeAttributes;
 use Spatie\EloquentSortable\Sortable;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -1379,7 +1379,7 @@ class Form implements Renderable
      *
      * @param Closure $callback
      *
-     * @return \OpenAdmin\Admin\Form\Footer
+     * @return \SuperAdmin\Admin\Form\Footer
      */
     public function footer(Closure $callback = null)
     {

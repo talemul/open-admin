@@ -1,7 +1,7 @@
 <?php
 
-use OpenAdmin\Admin\Auth\Database\Administrator;
-use OpenAdmin\Admin\Auth\Database\OperationLog;
+use SuperAdmin\Admin\Auth\Database\Administrator;
+use SuperAdmin\Admin\Auth\Database\OperationLog;
 
 class OperationLogTest extends TestCase
 {

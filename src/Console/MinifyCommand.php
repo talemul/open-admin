@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenAdmin\Admin\Console;
+namespace SuperAdmin\Admin\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use MatthiasMullie\Minify;
-use OpenAdmin\Admin\Admin;
-use OpenAdmin\Admin\Facades\Admin as AdminFacade;
+use SuperAdmin\Admin\Admin;
+use SuperAdmin\Admin\Facades\Admin as AdminFacade;
 
 class MinifyCommand extends Command
 {

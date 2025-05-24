@@ -1,17 +1,17 @@
 <?php
 
-namespace OpenAdmin\Admin\Form\Field;
+namespace SuperAdmin\Admin\Form\Field;
 
 use Illuminate\Database\Eloquent\Relations\HasMany as Relation;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use OpenAdmin\Admin\Admin;
-use OpenAdmin\Admin\Form;
-use OpenAdmin\Admin\Form\Field;
-use OpenAdmin\Admin\Form\Field\Traits\Sortable;
-use OpenAdmin\Admin\Form\NestedForm;
-use OpenAdmin\Admin\Widgets\Form as WidgetForm;
+use SuperAdmin\Admin\Admin;
+use SuperAdmin\Admin\Form;
+use SuperAdmin\Admin\Form\Field;
+use SuperAdmin\Admin\Form\Field\Traits\Sortable;
+use SuperAdmin\Admin\Form\NestedForm;
+use SuperAdmin\Admin\Widgets\Form as WidgetForm;
 
 /**
  * Class HasMany.

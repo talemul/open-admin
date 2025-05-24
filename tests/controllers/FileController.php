@@ -2,9 +2,9 @@
 
 namespace Tests\Controllers;
 
-use OpenAdmin\Admin\Controllers\AdminController;
-use OpenAdmin\Admin\Form;
-use OpenAdmin\Admin\Grid;
+use SuperAdmin\Admin\Controllers\AdminController;
+use SuperAdmin\Admin\Form;
+use SuperAdmin\Admin\Grid;
 use Tests\Models\File;
 
 class FileController extends AdminController

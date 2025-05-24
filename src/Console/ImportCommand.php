@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenAdmin\Admin\Console;
+namespace SuperAdmin\Admin\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
-use OpenAdmin\Admin\Admin;
+use SuperAdmin\Admin\Admin;
 
 class ImportCommand extends Command
 {
@@ -20,7 +20,7 @@ class ImportCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Import a Open-admin extension';
+    protected $description = 'Import a super-admin extension';
 
     /**
      * Execute the console command.

@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenAdmin\Admin\Form\Field;
+namespace SuperAdmin\Admin\Form\Field;
 
-use OpenAdmin\Admin\Form\Field;
+use SuperAdmin\Admin\Form\Field;
 
 class TimeRange extends Field
 {
@@ -24,7 +24,7 @@ class TimeRange extends Field
     protected $column = [];
 
     protected static $js = [
-        '/vendor/open-admin/flatpickr/plugins/minMaxTimePlugin.js',
+        '/vendor/super-admin/flatpickr/plugins/minMaxTimePlugin.js',
     ];
 
     public function __construct($column, $arguments)

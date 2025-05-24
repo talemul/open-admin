@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\Console;
+namespace SuperAdmin\Admin\Console;
 
 use Illuminate\Console\Command;
 
@@ -20,7 +20,7 @@ class ExportSeedCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Export seed a Open-admin database tables menu, roles and permissions';
+    protected $description = 'Export seed a super-admin database tables menu, roles and permissions';
 
     /**
      * Execute the console command.

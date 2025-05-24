@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin;
+namespace SuperAdmin\Admin;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Model;
@@ -15,11 +15,11 @@ use Illuminate\Database\Eloquent\Relations\Relation as EloquentRelation;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use OpenAdmin\Admin\Show\Divider;
-use OpenAdmin\Admin\Show\Field;
-use OpenAdmin\Admin\Show\Panel;
-use OpenAdmin\Admin\Show\Relation;
-use OpenAdmin\Admin\Traits\ShouldSnakeAttributes;
+use SuperAdmin\Admin\Show\Divider;
+use SuperAdmin\Admin\Show\Field;
+use SuperAdmin\Admin\Show\Panel;
+use SuperAdmin\Admin\Show\Relation;
+use SuperAdmin\Admin\Traits\ShouldSnakeAttributes;
 
 class Show implements Renderable
 {

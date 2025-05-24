@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\File;
-use OpenAdmin\Admin\Auth\Database\Administrator;
+use SuperAdmin\Admin\Auth\Database\Administrator;
 use Tests\Models\File as FileModel;
 
 class FileUploadTest extends TestCase

@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenAdmin\Admin\Tree;
+namespace SuperAdmin\Admin\Tree;
 
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
-use OpenAdmin\Admin\Tree;
+use SuperAdmin\Admin\Tree;
 
 class Tools implements Renderable
 {

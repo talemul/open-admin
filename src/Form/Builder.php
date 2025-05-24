@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenAdmin\Admin\Form;
+namespace SuperAdmin\Admin\Form;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
-use OpenAdmin\Admin\Admin;
-use OpenAdmin\Admin\Form;
-use OpenAdmin\Admin\Form\Field\Hidden;
+use SuperAdmin\Admin\Admin;
+use SuperAdmin\Admin\Form;
+use SuperAdmin\Admin\Form\Field\Hidden;
 
 /**
  * Class Builder.

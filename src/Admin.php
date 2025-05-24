@@ -1,17 +1,17 @@
 <?php
 
-namespace OpenAdmin\Admin;
+namespace SuperAdmin\Admin;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use InvalidArgumentException;
-use OpenAdmin\Admin\Auth\Database\Menu;
-use OpenAdmin\Admin\Controllers\AuthController;
-use OpenAdmin\Admin\Layout\Content;
-use OpenAdmin\Admin\Traits\HasAssets;
-use OpenAdmin\Admin\Widgets\Navbar;
+use SuperAdmin\Admin\Auth\Database\Menu;
+use SuperAdmin\Admin\Controllers\AuthController;
+use SuperAdmin\Admin\Layout\Content;
+use SuperAdmin\Admin\Traits\HasAssets;
+use SuperAdmin\Admin\Widgets\Navbar;
 
 /**
  * Class Admin.
@@ -21,7 +21,7 @@ class Admin
     use HasAssets;
 
     /**
-     * The Open-admin version.
+     * The super-admin version.
      *
      * @var string
      */
@@ -63,20 +63,20 @@ class Admin
     protected static $bootedCallbacks = [];
 
     /**
-     * Returns the long version of Open-admin.
+     * Returns the long version of super-admin.
      *
      * @return string The long application version
      */
     public static function getLongVersion()
     {
-        return sprintf('Open-admin <comment>version</comment> <info>%s</info>', self::VERSION);
+        return sprintf('super-admin <comment>version</comment> <info>%s</info>', self::VERSION);
     }
 
     /**
      * @param $model
      * @param Closure $callable
      *
-     * @return \OpenAdmin\Admin\Grid
+     * @return \SuperAdmin\Admin\Grid
      *
      * @deprecated since v1.6.1
      */
@@ -89,7 +89,7 @@ class Admin
      * @param $model
      * @param Closure $callable
      *
-     * @return \OpenAdmin\Admin\Form
+     * @return \SuperAdmin\Admin\Form
      *
      *  @deprecated since v1.6.1
      */
@@ -104,7 +104,7 @@ class Admin
      * @param $model
      * @param Closure|null $callable
      *
-     * @return \OpenAdmin\Admin\Tree
+     * @return \SuperAdmin\Admin\Tree
      */
     public function tree($model, Closure $callable = null)
     {
@@ -127,7 +127,7 @@ class Admin
     /**
      * @param Closure $callable
      *
-     * @return \OpenAdmin\Admin\Layout\Content
+     * @return \SuperAdmin\Admin\Layout\Content
      */
     public function content(Closure $callable = null)
     {
@@ -280,7 +280,7 @@ class Admin
     /**
      * Get navbar object.
      *
-     * @return \OpenAdmin\Admin\Widgets\Navbar
+     * @return \SuperAdmin\Admin\Widgets\Navbar
      */
     public function getNavbar()
     {
@@ -292,7 +292,7 @@ class Admin
     }
 
     /**
-     * Register the open-admin builtin routes.
+     * Register the super-admin builtin routes.
      *
      * @return void
      *
@@ -304,7 +304,7 @@ class Admin
     }
 
     /**
-     * Register the open-admin builtin routes.
+     * Register the super-admin builtin routes.
      *
      * @return void
      */
@@ -317,7 +317,7 @@ class Admin
 
         app('router')->group($attributes, function ($router) {
             /* @var \Illuminate\Support\Facades\Route $router */
-            $router->namespace('\OpenAdmin\Admin\Controllers')->group(function ($router) {
+            $router->namespace('\SuperAdmin\Admin\Controllers')->group(function ($router) {
                 /* @var \Illuminate\Routing\Router $router */
                 $router->resource('auth/users', 'UserController')->names('admin.auth.users');
                 $router->resource('auth/roles', 'RoleController')->names('admin.auth.roles');
@@ -418,7 +418,7 @@ class Admin
 
     public static function asset($asset)
     {
-        return url('/vendor/open-admin/'.$asset);
+        return url('/vendor/super-admin/'.$asset);
     }
 
     public static function js_trans()

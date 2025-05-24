@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Displayers;
+namespace SuperAdmin\Admin\Grid\Displayers;
 
 use Illuminate\Contracts\Support\Renderable;
-use OpenAdmin\Admin\Admin;
-use OpenAdmin\Admin\Grid\Simple;
+use SuperAdmin\Admin\Admin;
+use SuperAdmin\Admin\Grid\Simple;
 
 class Expand extends AbstractDisplayer
 {

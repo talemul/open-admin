@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenAdmin\Admin\Form\Field;
+namespace SuperAdmin\Admin\Form\Field;
 
-use OpenAdmin\Admin\Form\Field\Traits\BelongsToRelation;
+use SuperAdmin\Admin\Form\Field\Traits\BelongsToRelation;
 
 class BelongsToMany extends MultipleSelect
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenAdmin\Admin\Form\Field\Traits;
+namespace SuperAdmin\Admin\Form\Field\Traits;
 
-use OpenAdmin\Admin\Admin;
-use OpenAdmin\Admin\Form\Field;
+use SuperAdmin\Admin\Admin;
+use SuperAdmin\Admin\Form\Field;
 
 /**
  * @mixin Field
@@ -55,9 +55,9 @@ trait HasMediaPicker
      */
     protected function renderMediaPicker()
     {
-        if (!class_exists("OpenAdmin\Admin\Media\MediaManager")) {
+        if (!class_exists("SuperAdmin\Admin\Media\MediaManager")) {
             throw new \Exception(
-                '[Media Manager extention not installed yet.<br> Install using: <b>composer require open-admin-ext/media-manager</b><br><br>'
+                '[Media Manager extention not installed yet.<br> Install using: <b>composer require super-admin-ext/media-manager</b><br><br>'
             );
         }
 

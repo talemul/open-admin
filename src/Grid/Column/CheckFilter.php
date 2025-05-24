@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Column;
+namespace SuperAdmin\Admin\Grid\Column;
 
-use OpenAdmin\Admin\Admin;
-use OpenAdmin\Admin\Grid\Model;
+use SuperAdmin\Admin\Admin;
+use SuperAdmin\Admin\Grid\Model;
 
 class CheckFilter extends Filter
 {

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\File;
-use OpenAdmin\Admin\Auth\Database\Administrator;
+use SuperAdmin\Admin\Auth\Database\Administrator;
 use Tests\Models\Image;
 use Tests\Models\MultipleImage;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenAdmin\Admin\Middleware;
+namespace SuperAdmin\Admin\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use OpenAdmin\Admin\Auth\Database\OperationLog as OperationLogModel;
-use OpenAdmin\Admin\Facades\Admin;
+use SuperAdmin\Admin\Auth\Database\OperationLog as OperationLogModel;
+use SuperAdmin\Admin\Facades\Admin;
 
 class LogOperation
 {

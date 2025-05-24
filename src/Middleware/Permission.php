@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenAdmin\Admin\Middleware;
+namespace SuperAdmin\Admin\Middleware;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use OpenAdmin\Admin\Auth\Permission as Checker;
-use OpenAdmin\Admin\Facades\Admin;
+use SuperAdmin\Admin\Auth\Permission as Checker;
+use SuperAdmin\Admin\Facades\Admin;
 
 class Permission
 {

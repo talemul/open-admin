@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenAdmin\Admin\Show;
+namespace SuperAdmin\Admin\Show;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
-use OpenAdmin\Admin\Show;
+use SuperAdmin\Admin\Show;
 
 class Panel implements Renderable
 {

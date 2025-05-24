@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenAdmin\Admin\Form\Field;
+namespace SuperAdmin\Admin\Form\Field;
 
 use Illuminate\Support\Arr;
-use OpenAdmin\Admin\Form\Field;
-use OpenAdmin\Admin\Form\Field\Traits\HasMediaPicker;
-use OpenAdmin\Admin\Form\Field\Traits\UploadField;
+use SuperAdmin\Admin\Form\Field;
+use SuperAdmin\Admin\Form\Field\Traits\HasMediaPicker;
+use SuperAdmin\Admin\Form\Field\Traits\UploadField;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class File extends Field
@@ -14,11 +14,11 @@ class File extends Field
     use HasMediaPicker;
 
     protected static $css = [
-        '/vendor/open-admin/fields/file-upload/file-upload.css',
+        '/vendor/super-admin/fields/file-upload/file-upload.css',
     ];
 
     protected static $js = [
-        '/vendor/open-admin/fields/file-upload/file-upload.js',
+        '/vendor/super-admin/fields/file-upload/file-upload.js',
     ];
 
     public $type     = 'file';

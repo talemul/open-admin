@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\Form\Field;
+namespace SuperAdmin\Admin\Form\Field;
 
 /**
  * Class ListBox.
@@ -12,13 +12,13 @@ class Listbox extends MultipleSelect
     protected $settings = [];
     /*
     protected static $css = [
-        '/vendor/open-admin/dual-listbox/dual-listbox.css',
+        '/vendor/super-admin/dual-listbox/dual-listbox.css',
         // overwritten bootstrap styles
     ];
     */
 
     protected static $js = [
-        '/vendor/open-admin/dual-listbox/dual-listbox-custom.js',
+        '/vendor/super-admin/dual-listbox/dual-listbox-custom.js',
     ];
 
     public function settings(array $settings)

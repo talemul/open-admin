@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Displayers;
+namespace SuperAdmin\Admin\Grid\Displayers;
 
-use OpenAdmin\Admin\Admin;
+use SuperAdmin\Admin\Admin;
 
 class Datetime extends AbstractDisplayer
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Tools;
+namespace SuperAdmin\Admin\Grid\Tools;
 
 use Illuminate\Support\Collection;
-use OpenAdmin\Admin\Admin;
-use OpenAdmin\Admin\Grid;
+use SuperAdmin\Admin\Admin;
+use SuperAdmin\Admin\Grid;
 
 class ColumnSelector extends AbstractTool
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Tools;
+namespace SuperAdmin\Admin\Grid\Tools;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use OpenAdmin\Admin\Admin;
-use OpenAdmin\Admin\Form;
-use OpenAdmin\Admin\Form\Field;
-use OpenAdmin\Admin\Grid;
+use SuperAdmin\Admin\Admin;
+use SuperAdmin\Admin\Form;
+use SuperAdmin\Admin\Form\Field;
+use SuperAdmin\Admin\Grid;
 
 class QuickCreate implements Renderable
 {

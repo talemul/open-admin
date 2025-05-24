@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Filter\Presenter;
+namespace SuperAdmin\Admin\Grid\Filter\Presenter;
 
-use OpenAdmin\Admin\Grid\Filter\AbstractFilter;
+use SuperAdmin\Admin\Grid\Filter\AbstractFilter;
 
 abstract class Presenter
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Filter;
+namespace SuperAdmin\Admin\Grid\Filter;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use OpenAdmin\Admin\Grid\Filter;
-use OpenAdmin\Admin\Grid\Filter\Presenter\Checkbox;
-use OpenAdmin\Admin\Grid\Filter\Presenter\DateTime;
-use OpenAdmin\Admin\Grid\Filter\Presenter\MultipleSelect;
-use OpenAdmin\Admin\Grid\Filter\Presenter\Presenter;
-use OpenAdmin\Admin\Grid\Filter\Presenter\Radio;
-use OpenAdmin\Admin\Grid\Filter\Presenter\Select;
-use OpenAdmin\Admin\Grid\Filter\Presenter\Text;
+use SuperAdmin\Admin\Grid\Filter;
+use SuperAdmin\Admin\Grid\Filter\Presenter\Checkbox;
+use SuperAdmin\Admin\Grid\Filter\Presenter\DateTime;
+use SuperAdmin\Admin\Grid\Filter\Presenter\MultipleSelect;
+use SuperAdmin\Admin\Grid\Filter\Presenter\Presenter;
+use SuperAdmin\Admin\Grid\Filter\Presenter\Radio;
+use SuperAdmin\Admin\Grid\Filter\Presenter\Select;
+use SuperAdmin\Admin\Grid\Filter\Presenter\Text;
 
 /**
  * Class AbstractFilter.

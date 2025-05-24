@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Concerns;
+namespace SuperAdmin\Admin\Grid\Concerns;
 
-use OpenAdmin\Admin\Grid;
-use OpenAdmin\Admin\Grid\Exporter;
-use OpenAdmin\Admin\Grid\Exporters\AbstractExporter;
+use SuperAdmin\Admin\Grid;
+use SuperAdmin\Admin\Grid\Exporter;
+use SuperAdmin\Admin\Grid\Exporters\AbstractExporter;
 
 trait CanExportGrid
 {

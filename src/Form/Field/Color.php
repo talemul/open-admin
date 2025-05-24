@@ -1,15 +1,15 @@
 <?php
 
-namespace OpenAdmin\Admin\Form\Field;
+namespace SuperAdmin\Admin\Form\Field;
 
 class Color extends Text
 {
     protected static $css = [
-        '/vendor/open-admin/coloris/coloris.min.css',
+        '/vendor/super-admin/coloris/coloris.min.css',
     ];
 
     protected static $js = [
-        '/vendor/open-admin/coloris/coloris.min.js',
+        '/vendor/super-admin/coloris/coloris.min.js',
     ];
 
     /**

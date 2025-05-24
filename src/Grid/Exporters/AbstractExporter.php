@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenAdmin\Admin\Grid\Exporters;
+namespace SuperAdmin\Admin\Grid\Exporters;
 
-use OpenAdmin\Admin\Grid;
+use SuperAdmin\Admin\Grid;
 
 abstract class AbstractExporter implements ExporterInterface
 {
     /**
-     * @var \OpenAdmin\Admin\Grid
+     * @var \SuperAdmin\Admin\Grid
      */
     protected $grid;
 

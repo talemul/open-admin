@@ -86,7 +86,7 @@ return [
             'driver'     => 'oss',
             'access_id'  => 'LTAIsOQNIDQN78Jr',
             'access_key' => 'ChsYewaCxm1mi7AIBPRniuncEbFHNO',
-            'bucket'     => 'open-admin',
+            'bucket'     => 'super-admin',
             'endpoint'   => 'oss-cn-shanghai.aliyuncs.com',
         ],
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenAdmin\Admin\Auth\Database;
+namespace SuperAdmin\Admin\Auth\Database;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Facades\Storage;
-use OpenAdmin\Admin\Traits\DefaultDatetimeFormat;
+use SuperAdmin\Admin\Traits\DefaultDatetimeFormat;
 
 /**
  * Class Administrator.
@@ -57,7 +57,7 @@ class Administrator extends Model implements AuthenticatableContract
             return Storage::disk(config('admin.upload.disk'))->url($avatar);
         }
 
-        $default = config('admin.default_avatar') ?: '/vendor/open-admin/open-admin/gfx/user.svg';
+        $default = config('admin.default_avatar') ?: '/vendor/super-admin/super-admin/gfx/user.svg';
 
         return admin_asset($default);
     }

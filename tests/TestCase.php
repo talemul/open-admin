@@ -21,12 +21,12 @@ class TestCase extends BaseTestCase
 
         $app->booting(function () {
             $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('Admin', \OpenAdmin\Admin\Facades\Admin::class);
+            $loader->alias('Admin', \SuperAdmin\Admin\Facades\Admin::class);
         });
 
         $app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
 
-        $app->register('OpenAdmin\Admin\AdminServiceProvider');
+        $app->register('SuperAdmin\Admin\AdminServiceProvider');
 
         return $app;
     }
@@ -50,7 +50,7 @@ class TestCase extends BaseTestCase
             $this->app['config']->set($key, $value);
         }
 
-        $this->artisan('vendor:publish', ['--provider' => 'OpenAdmin\Admin\AdminServiceProvider']);
+        $this->artisan('vendor:publish', ['--provider' => 'SuperAdmin\Admin\AdminServiceProvider']);
 
         Schema::defaultStringLength(191);
 
@@ -66,9 +66,9 @@ class TestCase extends BaseTestCase
 
         require __DIR__.'/seeds/factory.php';
 
-//        \OpenAdmin\Admin\Admin::$css = [];
-//        \OpenAdmin\Admin\Admin::$js = [];
-//        \OpenAdmin\Admin\Admin::$script = [];
+//        \SuperAdmin\Admin\Admin::$css = [];
+//        \SuperAdmin\Admin\Admin::$js = [];
+//        \SuperAdmin\Admin\Admin::$script = [];
     }
 
     protected function tearDown(): void

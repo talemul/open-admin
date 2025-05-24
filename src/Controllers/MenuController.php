@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenAdmin\Admin\Controllers;
+namespace SuperAdmin\Admin\Controllers;
 
 use Illuminate\Routing\Controller;
-use OpenAdmin\Admin\Form;
-use OpenAdmin\Admin\Layout\Column;
-use OpenAdmin\Admin\Layout\Content;
-use OpenAdmin\Admin\Layout\Row;
-use OpenAdmin\Admin\Tree;
-use OpenAdmin\Admin\Widgets\Box;
+use SuperAdmin\Admin\Form;
+use SuperAdmin\Admin\Layout\Column;
+use SuperAdmin\Admin\Layout\Content;
+use SuperAdmin\Admin\Layout\Row;
+use SuperAdmin\Admin\Tree;
+use SuperAdmin\Admin\Widgets\Box;
 
 class MenuController extends Controller
 {
@@ -30,7 +30,7 @@ class MenuController extends Controller
                 $row->column(6, $this->treeView()->render());
 
                 $row->column(6, function (Column $column) {
-                    $form = new \OpenAdmin\Admin\Widgets\Form();
+                    $form = new \SuperAdmin\Admin\Widgets\Form();
                     $form->action(admin_url('auth/menu'));
 
                     $menuModel = config('admin.database.menu_model');
@@ -65,7 +65,7 @@ class MenuController extends Controller
     }
 
     /**
-     * @return \OpenAdmin\Admin\Tree
+     * @return \SuperAdmin\Admin\Tree
      */
     protected function treeView()
     {
